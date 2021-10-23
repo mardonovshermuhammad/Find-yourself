@@ -1,0 +1,57 @@
+.feature{
+    width: 100%;
+    transform: translateY(-20rem);
+}
+.explore{
+    margin-top: 5rem;
+    &-box{
+        @include d-f($ju-co: space-around);
+        flex-wrap: wrap;
+        @include botton(10rem);
+    }
+       text-align: center;
+    &-title{
+        font-size: 3rem;
+        width: 36rem;
+        margin: 0 auto;
+        @include botton(6rem);
+        @include respond (600){
+            font-size: 2rem;
+            width: 80%
+        }
+    }
+    &-image{
+        @include botton(5rem);
+        width: 8rem;
+    }
+}
+.touch{
+    margin-top: 15rem;
+    &-box{
+        width: 100%;
+        background-color: $color-bg-2;
+        @include d-f($ju-co: space-between, $al-it: start);
+        padding: 3rem;
+        border-radius: 20px;
+        @include respond (800){
+            @include d-f-d;
+        }
+        @include respond (600){
+            padding: 0;
+            }
+    }
+    &-image{
+        @include d-f($ju-co: end);
+        justify-content: right;
+        @include respond (800){
+            margin-top: 5rem;
+            @include d-f;
+            width: 90%;
+        }
+
+    }
+    &-imagee{
+        display: inline-block;
+        width: 80%;
+    }
+}

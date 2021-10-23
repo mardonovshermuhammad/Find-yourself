@@ -1,0 +1,111 @@
+
+h1, h2{
+    font-family: $archivo;
+}
+
+
+.header_title{
+    font-size: 8rem;
+    color: $color-white;
+    width: 55rem;
+    @include botton;
+    text-align: center;
+    margin-top: 10rem;
+    font-weight: bold;
+    @include respond (600){
+        margin-top: -5rem;
+        width: 100%;
+        font-size: 4rem;
+    }
+}
+.header_subtitle{
+    font-size: 2rem;
+    color: $color-white;
+    width: 60rem;
+    text-align: center;
+    @include botton(3rem);
+    @include respond (600){
+        width: 85%;
+        font-size: 1.5rem;
+    }
+
+}
+.feature-title{
+    margin-top: 2.3rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $color-secondary ;
+}
+.feature-text{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.card-title{
+    margin-top: 0rem;
+}
+.card-text{
+    font-size: 1.8rem;
+    @include botton(2rem);
+}
+.form-title{
+    margin-top: 2rem;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    color: $color-secondary;
+    @include botton(2rem);
+    @include respond (800){
+        display: inline-block;
+       text-align: center;
+    }
+    
+}
+.form-subtitle{
+    font-size: 2rem;
+    font-weight: 200;
+    @include botton(3rem);
+}
+.footer-title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: $color-secondary;
+    @include respond (600){
+        font-size: 1.5rem;
+       }
+}
+.footer-subtitle{
+    font-size: 1.6rem;
+    color: $color-secondary;
+    @include respond (600){
+        font-size: 1.3rem;
+       }
+
+}
+.col-1-of-3 h2{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: $color-secondary;
+    @include respond (600){
+        font-size: 1.3rem;
+       }
+}
+.footer-download h2{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: $color-secondary;
+    margin-bottom: 3rem;
+    @include respond (800){
+        text-align: center;
+       }
+       @include respond (600){
+        font-size: 1.7rem;
+       }
+}
+.footer-copy-right p{
+    text-align: center;
+    font-size: 1.6rem;
+    color: $color-secondary;
+    @include respond (600){
+        font-size: 1.2rem;
+       }
+}

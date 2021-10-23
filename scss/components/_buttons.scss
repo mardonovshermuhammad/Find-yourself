@@ -1,0 +1,90 @@
+.sign_in, .sign_up{
+    font-size: 2rem;
+    color: $color-white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sign_up{
+    margin-right: 3rem;
+    @include respond(600){
+       margin-bottom: 1rem;
+     }
+}
+.sign_in{
+    padding: 1.5rem 2.5rem;
+    border: 1px solid $color-white;
+    border-radius: 30px;
+    &:hover{
+        background-color: $color-white;
+        color: $color-secondary;
+        @include transition;
+
+    }
+    @include respond(600){
+        margin-left: -2rem;
+        margin-bottom: 1rem;
+      }
+}
+.btn{
+    font-size: 2rem;
+    padding: 1.5rem 6rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    @include respond (600){
+        font-size: 1.3rem;
+        padding: 1.2rem 4rem;
+    }
+}
+.card-link{
+    font-size: 1.8rem;
+    padding:1rem 3rem;
+    text-decoration: none;
+    background-color: $color-bg-2 ;
+    color: $color-grey ;
+    border-radius: 3rem;
+    @include transition;
+    &:hover{
+        color: $color-white;
+        background-color: $color-primary;
+    }
+}
+.btn--outline{
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    font-weight: 500;
+    @include transition;
+    &:hover{
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}
+.scroll-up{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background-color: $color-white;
+    right: 7rem;
+    top: -13rem;
+    border-radius: 2rem;
+    @include d-f;
+    @include respond (800){
+     left: 42%;
+    }
+}
+.col-1-of-3 a{
+    display: inline-block;
+    font-size: 1.6rem;
+    color: $color-secondary;
+    margin-bottom: 1rem;
+    @include respond (600){
+        font-size: 1.3rem;
+       }
+
+}
+.footer-download a img{
+    @include respond (600){
+        width: 10rem;
+       }
+}
+

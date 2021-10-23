@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color-bg-1;
+    font-family: $roboto;
+}
+
+html{
+    font-size: 62.5%;
+
+    @include respond (1800){
+        font-size: 75%;
+    }
+    @include respond (1500){
+        font-size: 68%;
+    }
+    @include respond (1200){
+        font-size: 62.5%;
+    }
+    @include respond (1000){
+        font-size: 58.25%;
+    }
+    @include respond (800){
+        font-size:56%; 
+    }
+    @include respond (600){
+        font-size: 60%;
+    }
+}
+h1{
+    font-size: 3rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 114rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

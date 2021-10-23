@@ -1,0 +1,16 @@
+.col-1-of-4{
+    width: 26rem;
+    background-color: $color-white;
+    @include d-f-d;
+    padding: 5rem 1rem;
+    border-radius: 2rem;
+    height: auto;
+    margin-top: 3rem;
+    @include transition;
+    &:hover{
+        transform: translateY(-1.5rem) scale(1.02);
+    }
+}
+.col-1-of-3:not(:last-child){
+    margin-right: 2rem;
+}

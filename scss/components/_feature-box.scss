@@ -1,0 +1,9 @@
+.feature-box{
+    @include d-f($ju-co:  space-around);
+    flex-wrap: wrap;
+    
+}
+.feature-image{
+    width: 8rem;
+    @include botton($botton: 3rem);
+}

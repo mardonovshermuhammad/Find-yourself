@@ -1,0 +1,41 @@
+.card{
+    width: 26rem;
+    background-color: $color-white;
+    padding: 1rem;
+    border-radius: 2rem;
+    padding-bottom: 3rem;
+    margin-top: 2.5rem;
+    box-shadow: 1rem 1rem 4rem rgba(#0000, 0.15);
+
+    &-header{
+        width: 24rem;
+        height: auto;
+        position: relative;
+    }
+    &-image{
+        width: 100%;
+        border-radius: 2rem;
+    }
+    &-like-btn{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 40%;
+        border: none;
+        color: $color-white;
+        cursor: pointer;
+    }
+    &-price{
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+        transform: translateY(-2.4rem);
+        background-color: $color-white;
+        color: $color-primary ;
+        display: inline-block;
+        margin: o auto;
+        border-radius: 3rem;
+    }
+
+}

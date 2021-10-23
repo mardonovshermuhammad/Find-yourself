@@ -1,0 +1,44 @@
+.footer{
+    margin-top: 20rem;
+    border-radius: 20rem 20rem 0 0;
+    background-color: $color-bg-2;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    &-box{
+        position: relative;
+        &-2{
+            @include d-f($ju-co: space-around, $al-it:start);
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            @include respond (800){
+               @include d-f-d;
+            }
+        }
+    }
+    &-link{
+        width: 50%;
+        @include d-f($al-it: none,  $ju-co: space-between );
+        @include respond (800){
+            width: 90%;
+            margin-top: 5rem;
+         }
+    }
+    &-text{
+        width: 45%;
+        @include respond (800){
+            width: 90%;
+            text-align: center;
+         }
+    }
+    &-download{
+        margin-bottom: 5rem;
+        @include respond (800){
+            @include d-f-d;
+            margin-top: 3rem;
+           }
+    }
+    @include respond (600){
+        border-radius: 10rem 10rem 0 0;
+       }
+}

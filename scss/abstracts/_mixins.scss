@@ -1,0 +1,67 @@
+
+@mixin d-f($displey:flex, $ju-co:center, $al-it:center) {
+   display: $displey;
+   justify-content: $ju-co;
+   align-items: $al-it;
+}
+@mixin d-f-d($displey:flex, $ju-co:center, $al-it:center, $f-d:column) {
+   display: $displey;
+   justify-content: $ju-co;
+   align-items: $al-it;
+   flex-direction: $f-d;
+}
+
+@mixin transition {
+   transition: 0.3s ease ; 
+}
+@mixin botton($botton: 4rem) {
+   margin-bottom: $botton;
+}
+@mixin abs {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+ }
+
+@for $i from 1 through 12{
+   .col#{$i}{
+      max-width: 114rem;
+      width: calc(100%/12*#{$i});
+   }
+}
+
+@mixin respond($breakpoind) {
+   @if $breakpoind == 600 {
+      @media only screen and(max-width: 37.5em){
+         @content
+      }; 
+   }
+   @if $breakpoind == 800{
+      @media only screen and(max-width: 50em){
+         @content
+      };
+   }
+   @if $breakpoind == 1000{
+      @media only screen and(max-width: 62.5em){
+         @content
+      };
+   }
+   @if $breakpoind == 1200{
+      @media only screen and(max-width: 75em){
+         @content
+      };
+   }
+   @if $breakpoind == 1500{
+      @media only screen and(max-width: 93.75em){
+         @content
+      };
+   }
+   @if $breakpoind == 1800{
+      @media only screen and(max-width: 112.5em){
+         @content
+      };
+   }
+
+   
+}
